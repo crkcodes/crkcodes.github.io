@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  font-family: monospace;
+  line-height: 1.5;
+  color: #336600;
+}
+
+#main {
+  margin: 10px auto;
+  padding: 20px 40px;
+  max-width: 800px;
+  background: #ebebe0;
+}
+
+a {
+  color: #003300;
+}
+
+a:visited {
+  color: #999966;
+}
+
+#img-div {
+  background: #ebebe0;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
