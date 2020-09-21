@@ -31,3 +31,17 @@ img {
   height: auto;
   margin: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  #main {
+    padding: 20px 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}
