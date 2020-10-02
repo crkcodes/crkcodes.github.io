@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Survey Form - Weather in Seattle</title>
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            <h1 id="title">Let's see how you feel about the weather in Seattle!</h1>
+        </header>
+
+        <p id="description">
+            A survey to get your perception regarding the weather in Seattle
+        </p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Please enter your name:</label><br>
+                <input type="text" size="20" placeholder="Your name here" id="name" name="name" required /><br />
+            </div><br>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Please enter your email:</label><br>
+                <input type="email" size="20" placeholder="Your email here" id="email" name="email" required /><br />
+            </div><br>
+
+
+            <div class="form-group">
+                <label id="number-label" for="number">Please enter your age (optional):</label><br>
+                <input type="number" placeholder="Your age here" id="number" name="number" min="10" max="100" /><br />
+            </div><br>
+
+
+            <div class="form-group">
+                <label for="rainnydays">How many rainny days do you think we have in Seattle?</label><br>
+                <input type="number" placeholder="Days of rain per year" id="rainnydays" name="rainnydays" min="0" max="366" /><br />
+            </div><br>
+
+
+
+            <div class="form-group">
+                <label for="cloudydays">How many cloudy days do you think we have in Seattle?</label><br>
+                <input type="number" placeholder="Cloudy days per year" id="cloudydays" name="cloudydays" min="0" max="366" /><br />
+            </div><br>
+
+
+
+            <div class="form-group">
+                <label for="sunnydays">How many sunny days do you think we have in Seattle?</label><br>
+                <input type="number" placeholder="Sunny days per year" id="sunnydays" name="sunnydays" min="0" max="366" /><br />
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="rainfall">How much rainfall do you think we have in Seattle?</label><br>
+                <input type="number" placeholder="Rainfall per year" id="rainfall" name="rainfall" min="0" max="500" /><br />
+            </div><br>
+
+            <p>How do you feel about the rain frequency?</p>
+
+            <label>
+                <input type=radio name="amount" value="not enough">It does not rain enough.
+            </label><br>
+
+
+            <label>
+                <input type=radio name="amount" value="a little bit">It rains a little bit.
+            </label><br>
+
+
+            <label>
+                <input type=radio name="amount" value="the right amount">It rains the right amount.
+            </label><br>
+
+
+            <label>
+                <input type=radio name="amount" value="a lot">It rains a lot.
+            </label><br>
+
+
+
+            <label>
+                <input type=radio name="amount" value="too much">It rains too much.
+            </label><br>
+
+
+
+            <p>What do you like about the weather in Seattle?</p>
+
+            <label>
+                <input type="checkbox" name="weather" value="pleasant">It is is very pleasant!
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="weather" value="mild">It is is mild!
+            </label><br>
+
+
+            <label>
+                <input type="checkbox" name="weather" value="balanced">It is well balanced!
+            </label><br>
+
+
+            <label>
+                <input type="checkbox" name="weather" value="fourseasons">The four seasons are well defined!
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="weather" value="very annoying">Every season is so beautiful!
+            </label><br>
+
+            <p>
+                What would be your favorite season?
+            </p>
+
+
+            <label>
+                <select id="dropdown" name="dropdown">
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="Fall">Fall</option>
+                </select></label>
+            <br>
+
+
+            <p>Anything else you would like to share?</p>
+            <textarea id="textarea" name="textarea" placeholder="Thank you!"> </textarea><br>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        const projectName = 'survey-form';
+        localStorage.setItem("fCC_" + projectName + "_hide", true);
+    </script>
+</body></html>
